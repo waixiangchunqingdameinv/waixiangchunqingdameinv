@@ -1,11 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css.css">
 </head>
+
 <body>
+    <!-- 标题-->
+    <header class="header">
+        <h1>揪揪 </h1>
+
+        <p>扬州信息工程系计算机网络应用</p>
+
+    </header>
+    <!-- 导航-->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo"><img src="images/tx.jpg" class="face"> 揪揪</div>
+            <button class="hbb" id="hbb">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+            <div class="nav-links">
+                <a href="#" class="nav-link">个人介绍</a>
+                <a href="#" class="nav-link">教育背景</a>
+                <a href="#" class="nav-link">兴趣爱好</a>
+                <a href="#" class="nav-link">联系方式</a>
+                <a href="#" class="nav-link">旅游日记</a>
+
+            </div>
+        </div>
+        <script>
+            const hbb=document.getElementById('hbb');
+            const navlinks=document.querySelector('.nav-links');
+            hbb.addEventListener('click',()=>{
+                hbb.classList.toggle('active');
+                navlinks.classList.toggle('active');
+            });
+
+
+        </script>
+        
     
+
+    </nav>
+        <!-- 内容区-->
+        <main class="main-content">
+            <div class="primary-content">
+                <div class="content-card">
+                    <h2>个人介绍</h2>
+                    <p></p>
+                    <p>海棠未雨，梨花先雪，一半春休</p>
+
+                </div>
+                <div class="content-card">
+                    <h3>教育背景
+
+                    </h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <h4>初中</h4>
+                        <p>2018-2020 </p>  
+                        </div>
+                    <div class="timeline-item">
+                        <h4>高中</h4>
+                        <p>2020-2023</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>大学</h4>
+                        <p>2023至今</p>
+                    </div>
+                    </div>
+
+                </div>
+                <div class="content-card">
+                    <h3>旅游日记</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <h4>2023.10.1 </h4>
+                            <p><img src="images/ly.jpg"></p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4>2024.10.1 </h4>
+                            <p><img src="images/ly2.jpg"></p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4>2025.05.5</h4>
+                            <p><img src="images/ly3.jpg"></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+            <aside class="asiderbar">
+                <div class="content-card">
+                    <h3>兴趣爱好</h3>
+                    <ul>
+                        <li>唱歌</li>
+                        <li>跳舞</li>
+                        <li>看书</li>
+                        <li>旅游</li>
+                    </ul>
+                </div>
+            </aside>
+        </main>
+        <!-- 页脚-->
+        <footer>
+            楸楸的联系方式：123654789
+
+
+        </footer>
 </body>
+
 </html>
